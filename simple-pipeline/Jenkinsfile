@@ -33,7 +33,7 @@ pipeline {
         // TODO: ADD AN APPROVAL STAGE
         stage('manual approval stage') {
             steps {
-                timeout(time: 60, unit: 'minute') {
+                timeout(time: 60, unit: 'MINUTES') {
 		  input message:'ready to move to stage 3?'
 		}
             }
